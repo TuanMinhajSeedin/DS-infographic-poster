@@ -40,7 +40,7 @@ all_columns=all_records.columns
 col0,col2 = st.columns((2))
 
 year_options = ['All', 2010, 2011, 2012]
-selected_year = st.sidebar.multiselect("Enter Year", year_options,default=2012)
+selected_year = st.sidebar.multiselect("Enter Year", year_options,default=[2012])
 if 'All' in selected_year:
     all_records_year = all_records
 else:
